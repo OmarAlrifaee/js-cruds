@@ -1,0 +1,53 @@
+body {
+  font-family: "Signika", sans-serif;
+  background-color: var(--dark);
+}
+
+:root {
+  --dark: #2d3250;
+}
+
+.container {
+}
+
+.container .controls input:focus {
+  outline: none;
+}
+.container input {
+  border: none;
+}
+.container input[type="button"] {
+  background-color: #fed049;
+}
+
+.container .controls span.total {
+  background-color: #fed049;
+}
+.container .search label {
+  background-color: #fed1499f;
+  cursor: pointer;
+}
+
+.container .search input:checked ~ label {
+  background-color: #fed049;
+}
+
+.container table {
+  border-spacing: 0;
+}
+.container table tr th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #eeeeee98;
+}
+.container table tr td {
+  border: 1px solid #eeeeee98;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container table tr td button.update-btn {
+  background-color: #fed049;
+}
+.container table tr td button.delete-btn {
+  background-color: #d83a56;
+}

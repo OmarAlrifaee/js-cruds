@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- main style file -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product management</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 class="fw-bold text-uppercase mt-5 text-center text-light">
+          Products manager
+        </h1>
+        <p class="fw-bold text-uppercase mt-2 text-center text-light fs-4">
+          create update and delete
+        </p>
+      </div>
+      <button
+        class="add-product btn btn-primary rounded mx-auto d-block fw-bold text-uppercase"
+      >
+        Add Product
+      </button>
+      <!-- start controls -->
+      <div class="controls py-5 d-none">
+        <!--start alert-->
+        <div class="alert alert-danger text-center fs-6 d-none" role="alert">
+          you can't leave input empty
+        </div>
+        <!-- end alert-->
+        <input
+          type="text"
+          name="title"
+          placeholder="Title"
+          class="py-2 px-4 bg-light fw-bold rounded d-block w-100 d-block"
+        />
+        <div class="d-flex align-items-center flex-wrap mt-3 gap-1">
+          <input
+            type="text"
+            placeholder="Price"
+            name="price"
+            class="py-2 px-4 bg-light fw-bold rounded flex-grow-1"
+          />
+          <input
+            type="text"
+            placeholder="Taxes"
+            name="taxes"
+            class="py-2 px-4 bg-light fw-bold rounded flex-grow-1"
+          />
+          <input
+            type="text"
+            placeholder="Ads"
+            name="ads"
+            class="py-2 px-4 bg-light fw-bold rounded flex-grow-1"
+          />
+          <input
+            type="text"
+            placeholder="Discount"
+            name="discount"
+            class="py-2 px-4 bg-light fw-bold rounded flex-grow-1"
+          />
+          <span
+            class="fw-bold rounded py-2 px-4 flex-grow-1 total text-uppercase"
+            >total <span class="total-value text-black-50 d-none"></span
+          ></span>
+        </div>
+        <input
+          type="text"
+          name="count"
+          placeholder="Count"
+          class="py-2 px-4 bg-light fw-bold rounded d-block w-100 d-block mt-3"
+        />
+        <input
+          type="text"
+          name="category"
+          placeholder="Category"
+          class="py-2 px-4 bg-light fw-bold rounded d-block w-100 d-block mt-3"
+        />
+        <input
+          type="button"
+          name="create-btn"
+          class="btn rounded d-block w-100 mt-3 fw-bold text-uppercase create-btn"
+          value="Create"
+        />
+        <div class="search-inputs d-flex justify-content-between mt-3">
+          <input
+            type="text"
+            name="search"
+            placeholder="Serch Here"
+            class="py-2 px-4 bg-light fw-bold rounded d-block w-100 d-block search-input"
+          />
+        </div>
+        <div
+          class="search mt-3 d-flex justify-content-between align-items-center"
+        >
+          <div>
+            <input
+              type="radio"
+              id="category"
+              class="d-none"
+              name="search-radio"
+            />
+            <label
+              for="category"
+              class="py-2 px-4 fw-bold text-uppercase rounded"
+              >search By category</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="title"
+              class="d-none"
+              name="search-radio"
+              checked
+            />
+            <label for="title" class="py-2 px-4 fw-bold text-uppercase rounded"
+              >Search By Title</label
+            >
+          </div>
+        </div>
+        <!-- d-none here -->
+        <input
+          type="button"
+          name="delete-all-btn"
+          class="btn rounded d-block w-100 mt-3 fw-bold text-uppercase delete-all-btn"
+          value="Delete All"
+        />
+      </div>
+      <!-- End controls -->
+      <!-- start table -->
+      <div class="table-responsive">
+        <table class="w-100 text-center table-bordered mt-5">
+          <tr class="fs-3">
+            <th class="text-light fw-bold text-uppercase">id</th>
+            <th class="text-light fw-bold text-uppercase">title</th>
+            <th class="text-light fw-bold text-uppercase">price</th>
+            <th class="text-light fw-bold text-uppercase">taxes</th>
+            <th class="text-light fw-bold text-uppercase">ads</th>
+            <th class="text-light fw-bold text-uppercase">discount</th>
+            <th class="text-light fw-bold text-uppercase">total</th>
+            <th class="text-light fw-bold text-uppercase">category</th>
+            <th class="text-light fw-bold text-uppercase">update</th>
+            <th class="text-light fw-bold text-uppercase">delete</th>
+          </tr>
+        </table>
+      </div>
+      <!-- End table -->
+    </div>
+
+    <!-- javascript files -->
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- icons -->
+    <script src="js/all.min.js"></script>
+    <!-- main file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
